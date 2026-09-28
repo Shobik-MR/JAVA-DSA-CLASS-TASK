@@ -8,18 +8,18 @@ public class task1{
         for(int i=0;i<n;i++){
             arr[i] = sc.nextInt();
         }
-        // Deque<Integer> q = new ArrayDeque<Integer>(k);
-        // for(int i=0;i<n;i++){
-        //   if(i<k-1){
-        //     q.offer(arr[i]);
-        //   }
-        //   else{
-        //     q.offer(arr[i]);
-        //     System.out.print(q);
-        //     q.poll();
-        //   }
-        //   System.out.println();
-        // }
+        Deque<Integer> q = new ArrayDeque<Integer>(k);
+        for(int i=0;i<n;i++){
+          if(i<k-1){
+            q.offer(arr[i]);
+          }
+          else{
+            q.offer(arr[i]);
+            System.out.print(q);
+            q.poll();
+          }
+          System.out.println();
+        }
         
     }
 }
